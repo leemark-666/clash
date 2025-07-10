@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能导航中心</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <span class="title-icon">🚀</span>
+                    智能导航中心
+                </h1>
+                <p class="subtitle">快速访问您常用的网站和工具</p>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜索网站..." class="search-input">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+
+            <div class="navigation-groups" id="navigationGroups">
+                <!-- 导航组将通过JavaScript动态加载 -->
+            </div>
+        </main>
+
+        <!-- 密码输入模态框 -->
+        <div class="modal-overlay" id="passwordModal">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3 class="modal-title">🔐 访问受保护内容</h3>
+                    <button class="modal-close" id="closeModal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-description">此组内容需要密码才能访问</p>
+                    <div class="input-group">
+                        <input type="password" id="passwordInput" placeholder="请输入密码" class="password-input">
+                        <button class="password-toggle" id="passwordToggle" type="button">👁️</button>
+                    </div>
+                    <div class="modal-error" id="modalError"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-cancel" id="cancelBtn">取消</button>
+                    <button class="btn btn-primary" id="verifyBtn">验证</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 加载动画 -->
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>正在加载导航数据...</p>
+        </div>
+
+        <!-- 消息提示 -->
+        <div class="toast" id="toast">
+            <span class="toast-message" id="toastMessage"></span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 智能导航中心 | 为您的网络生活提供便利</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

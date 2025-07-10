@@ -1,0 +1,77 @@
+# Git相关
+.git
+.gitignore
+
+# 文档
+README.md
+*.md
+docs/
+
+# 开发工具
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志文件
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 依赖目录（将重新安装）
+node_modules/
+
+# 环境文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 测试相关
+test/
+tests/
+*.test.js
+*.spec.js
+coverage/
+
+# 构建输出
+dist/
+build/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 操作系统生成文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker相关
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# 部署脚本
+deploy.sh
+
+# 备份文件
+backup_*
+*.backup
+
+# SSL证书
+ssl/
+*.pem
+*.key
+*.crt
+
+# 数据目录
+data/
